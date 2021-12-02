@@ -1,3 +1,4 @@
+  //create requires for express/fsutils/uuidv4/path/db.json
 const notes = require('express').Router();
 const { readFromFile, readAndAppend, writeToFile } = require('../helpers/fsutils');
 const { v4: uuidv4 } = require('uuid')
@@ -31,6 +32,7 @@ notes.post('/', (req, res) => {
     }
   });
 
+  //delete route to delete a note by id number and send updated file to front end for display
 notes.delete('/:id', (req, res) => {
     let jsonPath = path.join(__dirname, '../db/db.json')
     let noteId = req.params.id;
@@ -45,4 +47,5 @@ notes.delete('/:id', (req, res) => {
     res.json(dbJson);
 });
   
+  //export notes
 module.exports = notes;
