@@ -11,7 +11,7 @@ The application’s front end has already been created. It's your job to build t
 - HTML/CSS
 
 ## Link to GitHub main project
-https://github.com/yardboy2401/week11-expressnotetaker-wymore
+https://github.com/yardboy2401/ExpressNotetaker-Wymore
 
 ## Heroku link to live deployed project
 https://week11-expressnotetaker-wymore.herokuapp.com/
